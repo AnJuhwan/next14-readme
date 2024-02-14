@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 정리할 것들
 
-## Getting Started
+- next13 / 14 도입된 파일구조들
 
-First, run the development server:
+  - layout / page / loading / not-found / error / global-error / route / template / default
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Route Groups and Private Folders (라우터에 추가가 되지 않는 폴더들)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - group: (folder)
+  - private: \_folder
+  - Parallel: @folder
+  - Intercepted: (..)folder
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- server components
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  - ssr - 버그 (ssr 로 설정했는데 ssg로 바뀌는 버그) - 왜그런지
+  - ssg
+  - isr
 
-## Learn More
+- client components
 
-To learn more about Next.js, take a look at the following resources:
+  - csr
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- metaData
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - dynamic meta data
+  - static meta data
 
-## Deploy on Vercel
+- 새로 추가된 hooks
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  - useSelectedLayoutSegment 등등.. 기억이 잘 안남..
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- next middleware
+
+  - 생각이 잘 안남..
+
+- server action
+
+  - ...
+
+- app directory 단점
+  - 너무 호환이 안돼 시방.. 버그 개많음
